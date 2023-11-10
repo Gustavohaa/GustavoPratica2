@@ -9,7 +9,7 @@ import javax.persistence.Persistence;
 
 public class Inserir {
 	public static void inserirr() {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("exemplo-jpa");
+	EntityManagerFactory emf = Persistence.createEntityManagerFactory("exemplo-jpa");
         EntityManager em = emf.createEntityManager();
         Scanner sc = new Scanner(System.in);
 
