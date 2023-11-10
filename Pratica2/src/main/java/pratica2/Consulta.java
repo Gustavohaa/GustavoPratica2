@@ -10,7 +10,7 @@ import javax.persistence.Persistence;
 public class Consulta {
 	public static void consultar() {
 		
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("exemplo-jpa");
+	EntityManagerFactory emf = Persistence.createEntityManagerFactory("exemplo-jpa");
         EntityManager em = emf.createEntityManager();
         Scanner sc = new Scanner(System.in);
 
