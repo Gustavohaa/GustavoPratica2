@@ -20,18 +20,11 @@ public class Deleta {
 		if (veiculo != null) {
 			System.out.println("Informações do Veículo:");
 			System.out.println(veiculo);
-
-			System.out.print("Deseja realmente deletar este veículo? (Digite 'S' para confirmar): ");
-			String confirmacao = sc.next();
-
-			if (confirmacao.equalsIgnoreCase("S")) {
+
 				em.getTransaction().begin();
 				em.remove(veiculo);
 				em.getTransaction().commit();
-				System.out.println("Veículo removido com sucesso!");
-			} else {
-				System.out.println("Operação de exclusão cancelada.");
-			}
+				System.out.println("Veículo removido com sucesso!");
 		} else {
 			System.out.println("Veículo não encontrado.");
 		}
